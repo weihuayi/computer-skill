@@ -1,4 +1,56 @@
 
+# 1. Git 的基本设置
+
+用户家目录下的 `.gitconfig` 文件基本内容如下：
+
+```
+[user]
+	name = Huayi Wei
+	email = huayiwei1984@gmail.com
+[core]
+	editor = vim
+	quotepath = false
+[credential]
+	helper = cache --timeout=36000
+[push]
+	default = matching
+[http]
+	sslVerify = false
+```
+
+# 2. 共享版本开发流程
+
+## 2.1 增加合作者
+
+## 2.2 开发流程
+
+1. 开始工作时
+```
+$ git pull # 把服务器最新的修改拉回本地，如果能自动合并，git 会自动合并，弹出 commit
+           # 编辑器，输入注释; 如果不能自动合并，请先在本地解决冲突。
+``` 
+2. 修改后
+```
+$ git status # 检查修改状态
+$ git add . # 添加修改
+$ git commit # 添加修改注释
+$ git pull # 再次检查服务器是否有更新
+```
+3. 推送到服务器仓库 
+```
+$ git push
+```
+
+# 3. Pull and Request 开发流程
+
+
+
+
+
+
+
+
+
 1. 切换到master分支
 git checkout master
 2. 更新master代码
