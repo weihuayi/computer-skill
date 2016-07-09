@@ -17,4 +17,12 @@ fi
 # Redirect the website address in system level
 
 
+# Wifi 的重新启动
+
+```
+$ sudo ifconfig wlp9s0
+$ sudo service network-manager restart
+```
+
+
 
