@@ -1,7 +1,7 @@
 # Summary
 
 * [Fcitx](fcitx.md)
-* [apt-file](apt-file.md)
+* [Apt](apt.md)
 * [Fenics](fenics.md)
 * [Git](git.md)
 * [Ubuntu](ubuntu.md)

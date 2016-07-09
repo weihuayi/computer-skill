@@ -1,3 +1,7 @@
+# 安装 Ubuntu 系统
+
+下面是安装 Ubuntu 系统的基本配置
+
 ```
 #! /bin/bash
 # 系统配置
@@ -75,3 +79,60 @@ sudo apt-get install nvidia-364 nvidia-cuda-dev nvidia-settings nvidia-profiler 
 ```
 
 
+
+
+## 一些附加配置
+
+1. 卸载 `ibus`
+
+```
+$ sudo apt-get remove ibus
+```
+2. 避免在 Terminal 中经常输入密码, 
+
+```
+$ sudo visudo # 打开 /etc/sudoers 文件
+```
+
+在文件的最后加入下面行
+
+```
+username ALL=(ALL) NOPASSWD: ALL
+```
+
+然后 `ctrl+x`, 编辑器会提示你保存，输入 `Y`后，会给一个建议的文件名 `sudoers.tmp`,
+把 `.tmp` 删除，回车即可保存。
+
+
+## 一些问题及解决办法
+
+### No dash, No launcher, no top panel
+
+有下面 5 种可能解决办法，用了 1, 2, 3, 5 解决了问题。 
+
+1. Compiz Problems (OpenGL module not loading, Unity plugin not loading)
+```
+sudo rm -fr ~/.cache/compizconfig-1
+sudo rm -fr ~/.compiz
+```
+2. Session not loading (Guest session loads fine)
+```
+sudo rm -fr ~/.Xauthority
+sudo rm -fr ~/.config/autostart
+```
+3.  Session not loading (Guest not loading)
+```
+sudo apt-get install --reinstall ubuntu-desktop unity compizconfig-settings-manager upstart
+```
+4.  Launcher / Top Panel not loading (Nvidia cards)
+```
+sudo add-apt-repository ppa:xorg-edgers/ppa -y
+sudo apt-get update
+sudo apt-get install nvidia-340
+sudo reboot
+```
+5. Clearing Unity
+```
+dconf reset -f /org/compiz/
+setsid unity
+```

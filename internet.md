@@ -13,3 +13,8 @@ if [ -x /usr/bin/mentohust ]; then
 /usr/bin/mentohust
 fi
 ```
+
+# Redirect the website address in system level
+
+
+
