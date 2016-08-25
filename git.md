@@ -46,9 +46,18 @@ $ git push
 
 
 
+# 4. Git Hooks
 
 
+# 5. 统计仓库当前代码行数
 
+```
+$ git ls-files | xargs wc -l
+```
+
+Git hooks 就是一些可执行的脚本。在一些事件的前后（如 commit，push，和 receive）可以被 Git 调用执行完成一些任务。
+
+这些脚本仅仅被开发者的想像力所限制。
 
 
 1. 切换到master分支
