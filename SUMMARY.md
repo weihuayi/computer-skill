@@ -9,3 +9,8 @@
 * [USB Disk](udist.md)
 * [ctags](ctags.md)
 * [文件及文件夹处理技巧](file.md)
+* [Shell 脚本](shell.md)
+* [搭建网络服务器](webserver.md)
+* [Jupyter](jupyter.md)
+* [Bash](bash.md)
+* [Vim](vim.md)

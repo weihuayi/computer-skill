@@ -14,3 +14,9 @@ $ sudo apt-get install texlive-extra-utils
 $ pdfcrop  fig.pdf
 ```
 [1](http://examplenow.com/zh-cn/package/texlive-extra-utils/
+
+## pdf或其它图片的合并
+
+```
+pdfjoin 1.pdf 2.pdf ...
+```
