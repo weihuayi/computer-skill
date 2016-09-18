@@ -14,3 +14,4 @@
 * [Jupyter](jupyter.md)
 * [Bash](bash.md)
 * [Vim](vim.md)
+* [Docker](docker.md)
