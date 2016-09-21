@@ -15,3 +15,5 @@
 * [Bash](bash.md)
 * [Vim](vim.md)
 * [Docker](docker.md)
+* [连续集成测试](./continuous_integration.md)
+* [scp](./scp.md)

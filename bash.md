@@ -1,6 +1,33 @@
 ## Bash 
 
 
+## 如何更快进入常用文件夹
+
+在 `~/.bashrc` 设置环境变量, 如
+
+```bash
+export book=/home/why/repository/why/book
+export lecture=/home/why/repository/why/lecture
+export research=/home/why/repository/why/research
+export whypsc=/home/why/repository/why/whypsc
+export pyfem=/home/why/repository/why/pyfem
+```
+然后命令终端中执行
+```
+$ source ~/.bashrc
+```
+或者重启 `bash`. 你就可以在 shell 中输入
+```
+$ cd $book
+$ cd $lecture
+$ cd $pyfem
+$ cd $research
+$ cd $pyfem
+```
+直接进入常用文件夹了.
+
+
+
 ## 提高效率的操作技巧
 
 生活在 Bash shell 中，熟记以下快捷键，将极大的提高你的命令行操作效率。

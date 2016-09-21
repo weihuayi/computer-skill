@@ -48,6 +48,12 @@ $ git push
 
 # 4. Git Hooks
 
+当 Git 中一些重要的动作(commit, push, merge 等) 发生时, Hooks 提供一种执行脚本的方法. 
+
+共有两种 Hooks : 
+1. 客户端 Hook
+1. 服务器端 Hook
+
 
 # 5. 统计仓库当前代码行数
 
