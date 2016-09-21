@@ -1,6 +1,6 @@
-# Introduction
+# 简介 
 
-This book contain the general skills about using computer. 
+这本书主要是关于使用计算机过程经验与技巧的总结.
 
 # Author
 
