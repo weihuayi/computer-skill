@@ -1,22 +1,19 @@
+## Git 高级技巧
+
 
 # 1. Git 的基本设置
 
-用户家目录下的 `.gitconfig` 文件基本内容如下：
+```
+$ git config --global user.name "Huayi Wei"
+$ git config --global user.email "weihuayi@xtu.edu.cn"
+$ git config --global core.editor vim
+$ git config --global merge.tool vimdiff
+$ git config --global merge.conflictstyle diff3
+$ git config --global difftool.prompt false
+```
 
-```
-[user]
-	name = Huayi Wei
-	email = huayiwei1984@gmail.com
-[core]
-	editor = vim
-	quotepath = false
-[credential]
-	helper = cache --timeout=36000
-[push]
-	default = matching
-[http]
-	sslVerify = false
-```
+上面的配置都会保存到用户家目录下的 `.gitconfig` 文件.
+
 
 # 2. 共享版本开发流程
 
@@ -42,13 +39,11 @@ $ git push
 ```
 
 ## 2.3 合并冲突
-```
-git config --global diff.tool vimdiff
-git config --global merge.tool vimdiff
-git config merge.conflictstyle diff3
-git config --global difftool.prompt false
-```
+
+![Vimdiff 视图](./figures/three-way-merge-with-vimdiff.png)
+
 http://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/
+
 # 3. Pull and Request 开发流程
 
 
