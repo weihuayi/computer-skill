@@ -42,7 +42,23 @@ $ git push
 
 ![Vimdiff 视图](./figures/three-way-merge-with-vimdiff.png)
 
+```
+:diffg RE  " get from REMOTE
+:diffg BA  " get from BASE
+:diffg LO  " get from LOCAL
+```
+
+可以加入一个 Hook, 在 Merge 成功后, 删除一些备份文件, 如
+
+```
+*.orig
+*_REMOTE_*
+*_BASE_*
+*_LOCAL_*
+```
+
 http://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/
+
 
 # 3. Pull and Request 开发流程
 
