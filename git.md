@@ -41,6 +41,14 @@ $ git pull # 再次检查服务器是否有更新
 $ git push
 ```
 
+## 2.3 合并冲突
+```
+git config --global diff.tool vimdiff
+git config --global merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config --global difftool.prompt false
+```
+http://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/
 # 3. Pull and Request 开发流程
 
 
