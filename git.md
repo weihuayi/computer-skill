@@ -15,6 +15,7 @@ $ git config --global difftool.prompt false
 上面的配置都会保存到用户家目录下的 `.gitconfig` 文件.
 
 
+
 # 2. 共享版本开发流程
 
 ## 2.1 增加合作者
@@ -61,8 +62,6 @@ http://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/
 
 
 # 3. Pull and Request 开发流程
-
-
 
 
 # 4. Git Hooks
