@@ -19,11 +19,13 @@ $ sudo echo 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'  > /etc/
 $ sudo apt-get update
 $ sudo apt-get purge lxc-docker # purge 净化
 $ apt-cache policy docker-engine
-$ $ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+$ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 $ sudo apt-get update
 $ sudo apt-get install docker-engine
 $ sudo service docker start
 $ sudo docker run hello-world
 ```
+
+## 使用
 
 

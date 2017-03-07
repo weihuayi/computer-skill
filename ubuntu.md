@@ -35,6 +35,8 @@ sudo apt-get -y install mercurial subversion git gitk
 # 并行库openmpi
 sudo apt-get -y install openmpi-bin openmpi-common libopenmpi-dev
 
+# exfat filesystem on sddisk
+sudo apt-get install exfat-fuse exfat-utils
 # 输入法
 sudo apt-get install fcitx fcitx-tools fcitx-table-latex #这是用来输入Latex命令的吗
 
@@ -136,3 +138,4 @@ sudo reboot
 dconf reset -f /org/compiz/
 setsid unity
 ```
+
