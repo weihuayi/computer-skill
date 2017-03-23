@@ -1,5 +1,10 @@
 ## Bash 
 
+## LD_PRELOAD
+
+```
+export LD_PRELOAD=/usr/lib/openmpi/lib/libmpi.so
+```
 
 ## 如何更快进入常用文件夹
 

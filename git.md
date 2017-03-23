@@ -143,4 +143,6 @@ http://www.worldhello.net/gotgithub/04-work-with-others/020-shared-repo.html
 
 
 
+## tips
 
+1. `git checkout -- . `: 放弃当前工作目录下的修改
