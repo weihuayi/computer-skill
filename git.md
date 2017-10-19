@@ -140,7 +140,25 @@ http://www.worldhello.net/gotgithub/04-work-with-others/020-shared-repo.html
 * 以文件哈希值索引，而不是文件名
 * Git 一般只添加数据
 
+# 6 切换分支并开始工作
 
+1. 新建一个名为"mytest"的分支
+git branch mytest
+2. 查看分支
+git branch
+3. 切换到 "mytest" 的分支
+git checkout mytest
+4. 在 "mytest" 的分支下工作
+git pull
+git add .
+git commit
+git push
+5. 再切换回"master" 分支
+git checkout master
+6. 把两个分支合并
+git merge mytest
+7. 删除 "mytest" 分支
+git branch -D mytest
 
 
 ## tips
