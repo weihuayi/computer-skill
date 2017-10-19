@@ -146,3 +146,10 @@ http://www.worldhello.net/gotgithub/04-work-with-others/020-shared-repo.html
 ## tips
 
 1. `git checkout -- . `: 放弃当前工作目录下的修改
+
+## Delete a Submodule
+
+1. delete the reference in .gitmodules and .git/config
+1. git add .
+1. git rm --cached 
+1. rm bundle/***q

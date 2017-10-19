@@ -85,4 +85,42 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apa
 
 
 
+## jupyter-notebook  slide show 
+
+```
+sudo -H pip3 install RISE
+sudo jupyter-nbextension install rise --py --sys-prefix
+sudo jupyter-nbextension enable rise --py --sys-prefix
+```
+
+## Mac os
+
+1.	Install mac port 
+	2.	port install python34
+	3.	port install py34-pip
+	4.	sudo pip install jupyter
+	5.	jupyter notebook --generate-config
+	6.	vi ~/.jupyter/jupyter_notebook_config.py
+	7.	c.NotebookApp.browser = u'Safari'
+	8.	sudo -H pip install numpy
+	9.	sudo -H pip install pymatbridge
+	10.	sudo -H pip install matlab_kernel
+	11.	python -m matlab_kernel --user
+	12.	cd "matlabroot/extern/engines/python"
+	13.	python setup.py install
+
+If the path is not included, open .bash_profile, add path 
+
+export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH
+export LD_LIBRARY_PATH=/opt/local/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages:$LD_LIBRARY_PATH
+
+## 技巧
+
+sudo pip install jupyter_contrib_nbextensions
+sudo jupyter contrib nbextension install --user
+
+
+sudo -H pip install ipywidgets
+sudo jupyter nbextension enable --py widgetsnbextension
+
 
